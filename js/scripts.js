@@ -30,3 +30,29 @@ function fetchFormData() {
 
   return [gender, day, month, year];
 }
+function calculateWeekDay(birthDate) {
+  let [dayOfMonth, monthOfYear, yearOfBirth] = birthDate;
+  let zeroBasedCentury, yearOfCentury;
+
+
+  if (monthOfYear <= 0) {
+    monthOfYear += 12;
+    yearOfBirth -= 1;
+  }
+
+
+  zeroBasedCentury = parseInt(yearOfBirth / 100);
+  yearOfCentury = yearOfBirth % 100;
+
+  let dayOfWeek =
+    (dayOfMonth +
+      parseInt(
+        2.6 * (monthOfYear + 1) +
+          yearOfCentury +
+          parseInt(yearOfCentury / 4) +
+          parseInt(zeroBasedCentury / 4) +
+          5 * zeroBasedCentury
+      )) %
+    7;
+  return dayOfWeek;
+}
