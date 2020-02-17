@@ -1,0 +1,23 @@
+.jumbotron{
+  text-align: center;
+  color:yellowgreen;
+}
+.akanNames{
+  border: 2px black;
+  margin: 20px;
+  margin-left: 300px;
+  padding: 8px;
+  width: 350px;
+  float:left;
+  background-color: lightgrey;
+}
+h2{
+  color: green;
+}
+p{
+  text-align: center;
+  width: 700px;
+}
+body{
+  background-color: lightyellow;
+}

@@ -3,30 +3,39 @@
   <head>
     <title>Akan Names</title>
     <script src="js/scripts.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
-    <h1>Akan Names</h1>
+    <div class="jumbotron">
+      <h1>Akan Names</h1>
+    </div>
     <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
-    <h2>Male</h2>
-    <ul>
-      <li>Sunday: Kwasi</li>
-      <li>Monday: Kwadwo</li>
-      <li>Tuesday: Kwabena</li>
-      <li>Wednesday: Kwaku</li>
-      <li>Thursday:  Yaw</li>
-      <li>Friday: Kofi</li>
-      <li>Saturday: Kwame</li>
-    </ul>
-    <h2>Female</h2>
-    <ul>
-      <li>Sunday: Akosua</li>
-      <li>Monday: Adwoa</li>
-      <li>Tuesday: Abenaa</li>
-      <li>Wednesday: Akua</li>
-      <li>Thursday:  Yaa</li>
-      <li>Friday: Afua</li>
-      <li>Saturday: Ama</li>
-    </ul>
+    <div class="akanNames">
+      <h2>Male</h2>
+      <ul>
+        <li>Sunday: Kwasi</li>
+        <li>Monday: Kwadwo</li>
+        <li>Tuesday: Kwabena</li>
+        <li>Wednesday: Kwaku</li>
+        <li>Thursday:  Yaw</li>
+        <li>Friday: Kofi</li>
+        <li>Saturday: Kwame</li>
+      </ul>
+    </div>
+    <div class="akanNames">
+      <h2>Female</h2>
+      <ul>
+        <li>Sunday: Akosua</li>
+        <li>Monday: Adwoa</li>
+        <li>Tuesday: Abenaa</li>
+        <li>Wednesday: Akua</li>
+        <li>Thursday:  Yaa</li>
+        <li>Friday: Afua</li>
+        <li>Saturday: Ama</li>
+      </ul>
+    </div>
+    <p>Enter your details below to check your Akan name:</p>
     <!-- Initialize form input -->
     <div class="col-md-4">
           <form action="#" onsubmit="findAkanName()">
@@ -41,9 +50,7 @@
               <option>Female</option>
             </select>
             <!-- Generate Akan name -->
-            <button class="btn btn-block btn-outline-dark" type="submit">
-              Generate
-            </button>
+            <button class="btn btn-block btn-outline-dark" type="submit">Submit</button>
           </form>
         </div>
       </div>
