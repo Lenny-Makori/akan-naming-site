@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Akan Names</title>
+    <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body>
     <h1>Akan Names</h1>
@@ -28,39 +29,14 @@
     </ul>
     <!-- Initialize form input -->
     <div class="col-md-4">
-          <form action="#" onsubmit="deriveAkanName()">
-            <input
-              class="form-control"
-              type="number"
-              min="1"
-              max="31"
-              name="day"
-              placeholder="Day"
-              required
-            />
+          <form action="#" onsubmit="findAkanName()">
+            <input class="form-control" type="number" min="1" max="31" id="day" placeholder="Day" required>
             <!-- Initialize date month validator -->
-            <input
-              class="form-control"
-              type="number"
-              min="1"
-              max="12"
-              name="month"
-              placeholder="Month"
-              required
-            />
+            <input class="form-control" type="number" min="1" max="12" id="month" placeholder="Month" required>
             <!-- Initialize year validator -->
-            <input
-              class="form-control"
-              type="number"
-              min="1920"
-              max="2019"
-              name="year"
-              placeholder="Year"
-              required
-            />
+            <input class="form-control" type="number" min="1920" max="2019" id="year" placeholder="Year" required>
             <!-- Initialize input for gender -->
             <select class="form-control" id="gender" name="gender">
-              <option disabled selected>Gender</option>
               <option>Male</option>
               <option>Female</option>
             </select>
