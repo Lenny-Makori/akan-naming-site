@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Akan Names</title>
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -39,16 +41,12 @@
     <!-- Initialize form input -->
     <div class="col-md-4">
           <form action="#" onsubmit="findAkanName()">
-            <input class="form-control" type="number" min="1" max="31" id="day" placeholder="Day" required>
-            <!-- Initialize date month validator -->
-            <input class="form-control" type="number" min="1" max="12" id="month" placeholder="Month" required>
-            <!-- Initialize year validator -->
-            <input class="form-control" type="number" min="1920" max="2019" id="year" placeholder="Year" required>
+            <input class="form-control" type="date" id="myBirthday" autocomplete="off" required>
             <!-- Initialize input for gender -->
             <label for="gender">Gender:</label>
             <select class="form-control" id="gender" name="gender">
-              <option>Male</option>
-              <option>Female</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
             </select>
             <!-- Generate Akan name -->
             <button class="btn btn-block btn-outline-dark" type="submit">Submit</button>
